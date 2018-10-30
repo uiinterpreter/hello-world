@@ -12,15 +12,7 @@ app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+'/dist/shree-power/index.html'));
 });
 
-// app.route('/api/movie').get((req, res) => {
 
-// });
-// app.route('/api/movies').get((req, res) => {
-
-// });
-// app.route('/api/details').get((req, res) => {
-
-// });
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
