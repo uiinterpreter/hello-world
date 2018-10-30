@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/movie-search-app'));
+app.use(express.static(__dirname + '/dist/shree-power'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/movie-search-app/index.html'));
+res.sendFile(path.join(__dirname+'/dist/shree-power/index.html'));
 });
 
 // app.route('/api/movie').get((req, res) => {
